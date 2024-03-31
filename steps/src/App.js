@@ -12,42 +12,19 @@ export default function App() {
   
 
   function handlePrevious() {
-    if (step > 1 ) setStep(step - 1 );
-    console.log(step);
-    
+    if (step > 1 ) 
+    setStep(step - 1 );
   }
-  // function handlePrevious() {
-  //   if (step > 1) {
-  //     setStep((s) => {
-  //       const newState = s - 1; // Calculate the new state value
-  //       console.log(newState); // Logging the new state value
-  //       return newState; // Returning the new state value
-  //     });
-  //   }
-  // }
-  
-
-//   function handleNext(){
-//   if (step < 3 ) 
-//   setStep(step + 1)
-//   setStep(step + 1)
-// ;
-// console.log(step)
-  
-//   }
 
 
   function handleNext(){
     if (step < 3 ) 
     setStep((s) => s + 1)
-    setStep((s) => s + 1)
   ;
   console.log(step)
     
     }
-  
-
-
+    
   return (<>
     <button className = "close" onClick={()=> setIsOpen(!isOpen)}>&times;</button>
     { isOpen && <div className = "steps" >
